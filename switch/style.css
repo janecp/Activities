@@ -1,0 +1,120 @@
+.body{
+	margin: 0;
+}
+.body {
+  /* Location of the image */
+  background-image: url(img/Card1.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: 100%;
+
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+.body1 {
+  /* Location of the image */
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #d99f0d;
+}
+
+.h12{
+    padding-left: 300px;
+    padding-top: 180px;
+    padding-bottom: 0px;
+    text-shadow: 5px 4px black;
+    color:white ; 
+
+}
+.h11{
+    padding-left: 300px;
+    text-shadow: 5px 4px black;
+    text-decoration: ;
+    color:white ; 
+
+}
+
+
+.log{
+	padding-left: 50px;
+	padding-right: 5px; 
+}
+
+
+.image1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 90%;
+    
+    background-repeat: no-repeat;
+    background-image: url(img/Card1.jpg); 
+}
+
+.image2 {
+    display: inline block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 90%;
+    
+    background-repeat: no-repeat;
+    background-image: url(img/Card2.jpg); 
+}
+
+.image3 {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 90%;
+    
+    background-repeat: no-repeat;
+    background-image: url(img/Card3.jpg); 
+}
+
+.image4 {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 90%;
+    
+    background-repeat: no-repeat;
+    background-image: url(img/Card4.jpg); 
+}

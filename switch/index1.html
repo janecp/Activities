@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rorschach 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body div class="image1">
+		<script type="text/javascript"> 
+		<!--
+
+			
+				var nscore = document.getElementById('nscore') ;
+				var ascore = document.getElementById('ascore') ;
+				var status = true ;
+				var question = 4 ;
+
+				function getCard() {
+
+					if (question == 4) {
+					var card = prompt("What do you think of the image? ");
+						if (!isNaN(card)){
+							status = false;
+							alert("Numbers are not allowed")
+						} else {
+							status = true;
+						}
+					if ((card=="two human") || (card=="humans") || (card=="human figure")){
+						alert("Your thinking normally")
+						window.location = "index2.html"
+						nscore.dataset.value++;
+    					nscore.innerHTML = ascore.dataset.value;
+    					getCard();
+					} else {
+						alert("You're an addict")
+						window.location = "index2.html"
+						ascore.dataset.value++;
+    					ascore.innerHTML = ascore.dataset.value;
+    					getCard();
+					}
+				}
+
+				var status = true;
+				while(status == "true") {
+					
+				switch(true)
+				{
+				case 'lover' : document.write("A+</br>");
+					status = false;
+					break;
+				case (grade >= 91 && grade<= 95): document.write("A</br>");
+					status = false;
+					break;
+				case (grade >= 86 && grade<= 90): document.write("A-</br>");
+					status = false;
+					break;
+				case (grade >= 81 && grade <= 85): document.write("B+</br>");
+					status = false;
+					break;
+				case (grade >= 75 && grade <= 80): document.write("B</br>");
+					status = false;
+					break;
+				case (grade >= 69 && grade <= 74): document.write("B-</br>");
+					status = false;
+					break;
+				case (grade >= 63 && grade <= 68): document.write("C+</br>");
+					status = false;
+					break;
+				case (grade >= 57 && grade <= 62): document.write("C</br>");
+					status = false;
+					break;
+				case (grade >= 50 && grade <= 56): document.write("C-</br>");
+					status = false;
+					break;
+				default: alert("Numbers not allowed");
+						 status = true;
+						 break;
+				}
+			}
+			}
+			
+			document.write("Existing switch block</br>");
+		//-->
+			</script>
+
+			
+			<p>Set the variable to different value and then try..</p><br>
+			<form><center>
+			<input type="button" Value="Click" onclick="getCard()">
+			</center></form>
+
+
+</body>
+</html>
