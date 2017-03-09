@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traffic Lights</title>
+
+</head>
+<body onload="timedText();">
+
+		<center>
+		<h2>Traffic Lights</h2>
+
+		<img id='image' src="img/red.png" >
+		
+		</center>
+
+		<script type="text/javascript">
+		
+		function  timedText(){
+
+    	setTimeout(function(){ document.getElementById("image").src="img/green.png"; }, 5000);
+    	setTimeout(function(){ document.getElementById("image").src="img/yellow.png"; }, 15000);
+    	setTimeout(function(){location.reload();}, 18000);
+}
+			
+</script>
+	
+</body>
+</html>
+
+
+
