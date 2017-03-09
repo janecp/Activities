@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	.blackbg{
+		background-color: black;
+	}
+	.redbg{
+		background-color: red;
+	}
+</style>
+</head>
+	<body id="image">
+			<script type="text/javascript">
+			var bgpro = prompt("Enter a color background:");
+				switch(bgpro.toLowerCase()){
+						case "black":
+								var bd="blackbg";
+								document.getElementById("image").
+								setAttribute("class",bd);
+							break;
+						case "red":
+								var bd="redbg";
+								document.getElementById("image").
+								setAttribute("class",bd);
+							break;
+				default:
+					alert("No background color entered.");
+	}
+	</script>
+</body>
+</html>
